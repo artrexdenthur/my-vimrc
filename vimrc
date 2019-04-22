@@ -34,10 +34,10 @@ Plug 'vim-syntastic/syntastic'
 " Autocomplete
 Plug 'Valloric/YouCompleteMe' " As-you-type completion
 " Plug 'othree/vim-autocomplpop' "Automatic trigger complete popup menu
-Plug 'tpope/endwise' " Autocompletes 'end's for Ruby
+Plug 'tpope/vim-endwise' " Autocompletes 'end's for Ruby
 
 " Snippets
-Plug 'garbas/vim-snipmates' " A snippet support plugin
+Plug 'msanders/snipmate.vim' " A snippet support plugin
 Plug 'honza/vim-snippets' " A snippet repository
 
 " Ruby, courtesy of tpope
@@ -56,7 +56,7 @@ Plug 'sheerun/vim-polyglot' " The one and only!
 " Git
 Plug 'airblade/vim-gitgutter' " Shows a git diff in the gutter and stages/undoes hunks
 Plug 'tpope/vim-fugitive' " Git wrapper with a great name
-Plug 'rhysd/commitia.vim' " Better editing on commit messages
+Plug 'rhysd/committia.vim' " Better editing on commit messages
 Plug 'int3/vim-extradite' " Git commit browser
 
 " Other
