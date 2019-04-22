@@ -106,7 +106,7 @@ nmap <F8> :TagbarToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set 7 lines to the cursor - when moving vertically using j/k
+" Make the text start scrolling when the cursor is 7 lines away from the edge
 set so=7
 
 " Avoid garbled characters in Chinese language windows OS
@@ -141,6 +141,9 @@ set visualbell
 
 " Add a bit extra margin to the left
 set foldcolumn=1
+
+" No rat poison
+set mouse=a
 
 """"""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
