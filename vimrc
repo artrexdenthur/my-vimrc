@@ -11,7 +11,62 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
+" Environment
+Plug 'itchyny/lightline.vim' " 'Light and Configurable' status bar
+" File Explorer (We'll see)
+Plug 'scrooloose/nerdtree'
+
+" Class Outline Viewer
 Plug 'majutsushi/tagbar'
+
+" Fuzzy Search
+Plug 'ctrlpvim/ctrlp.vim'
+
+" Ack (Grep replacement, plugged in to Vim)
+Plug 'mileszs/ack.vim'
+
+" Find and Replace in multiple files
+Plug 'brooth/far.vim'
+
+" Syntax checker (simple linter?)
+Plug 'vim-syntastic/syntastic'
+
+" Autocomplete
+Plug 'Valloric/YouCompleteMe' " As-you-type completion
+" Plug 'othree/vim-autocomplpop' "Automatic trigger complete popup menu
+Plug 'tpope/endwise' " Autocompletes 'end's for Ruby
+
+" Snippets
+Plug 'garbas/vim-snipmates' " A snippet support plugin
+Plug 'honza/vim-snippets' " A snippet repository
+
+" Ruby, courtesy of tpope
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-rake'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-rvm'
+Plug 'ngmy/vim-rubocop' " ... and ngmy
+
+" Tests
+Plug 'janko-m/vim-test'
+
+" Additional syntaxes and markup/programming languages
+Plug 'sheerun/vim-polyglot' " The one and only!
+
+" Git
+Plug 'airblade/vim-gitgutter' " Shows a git diff in the gutter and stages/undoes hunks
+Plug 'tpope/vim-fugitive' " Git wrapper with a great name
+Plug 'rhysd/commitia.vim' " Better editing on commit messages
+Plug 'int3/vim-extradite' " Git commit browser
+
+" Other
+Plug 'airblade/vim-rooter' " changes Vim working directory to project root
+Plug 'tyru/caw.vim' " comments
+Plug 'Raimondi/delimitMate' " insert mode auto-complete for quotes, etc.
+Plug 'sickill/vim-pasta' " pasting in Vim adjusts to local tabs
+Plug 'mattn/emmet-vim' " Emmet-like abbreviation expansion
+Plug 'bogado/file-line' " Allows opening a file to a specific line (for error searching)
+Plug 'google/vim-searchindex' " Shows the count of matches and index of current match
 
 
 call plug#end()
@@ -62,6 +117,7 @@ source $VIMRUNTIME/menu.vim
 
 " Turn on the Wild menu
 set wildmenu
+set wildmode=longest,list,full
 
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc
